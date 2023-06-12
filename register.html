@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="img/pexels-cottonbro-studio-5302616-2048x1080-25fps.mp4" type="video/mp4">
+             <!-- Mensaje alternativo si el navegador no admite el formato de video -->
+            Tu navegador no admite el elemento video.
+        </video>
+    </div>
+    <div class="register-form">
+        <h2>Registro</h2>
+        <!-- Contenido del formulario de registro -->
+        <label for="nombre">Nombre de Usuario</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre de usuario">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Ingresa tu email">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" placeholder="Ingresa tu contraseña">
+        <label for="confirmar-contrasena">Confirmar Contraseña</label>
+        <input type="password" id="confirmar-contrasena" placeholder="Confirma tu contraseña">
+        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        <input type="submit" value="Registrarse" onclick="registrar()">
+        <a href="index_login.html" class="login-link">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+    </div>
+    <script src="js/funcionalidades.js"></script>
+</body>
+</html>
